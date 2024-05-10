@@ -1,0 +1,95 @@
+* {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(rgb(253, 98, 214),rgb(10, 121, 224));
+    color: #fff;
+
+    &__container {
+        text-align: center;
+    }
+
+    &__h1 {
+        font-size: 3rem;
+        margin-bottom: 50px;
+    }
+
+    &__text{
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+        margin-left: 188px;
+    }
+
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        label {
+            margin-bottom: 8px;
+        }
+
+        input[type="email"] {
+            padding: 8px;
+            width: 200px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        input[type="submit"] {
+            padding: 8px 16px;
+            border: 1px solid #ae00ff;
+            border-radius: 4px;
+            background-color: #d400ff;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+            margin-top: 10px;
+
+            &:hover {
+                background-color: #ef3bff;
+            }
+        }
+    }
+
+    @media (max-width: 640px) {
+        .hero {
+            height: auto;
+            padding: 20px;
+            text-align: center;
+
+            &__h1 {
+                font-size: 30px;
+                margin-bottom: 10px;
+                margin-left: 13px;
+            }
+
+            &__text {
+                font-size: 16px;
+                margin-bottom: 10px;
+                margin-left: 16px;
+            }
+            
+            .formulario {
+                input[type="email"] {
+                    width: 100%;
+                    max-width: 300px;
+                }
+
+                input[type="submit"] {
+                    width: 100%;
+                    max-width: 200px;
+                    margin-top: 8px;
+                }
+            }
+        }
+    }
+}
