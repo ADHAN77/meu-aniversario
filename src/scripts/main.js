@@ -21,6 +21,6 @@ const contaAsHoras = setInterval(function() {
 
     if (distanciaAteOEevento < 0) {
         clearInterval(contaAsHoras);
-        document.getElementById('contador').innerHTML = 'Evento expirado';
+        document.getElementById('contador').innerHTML = 'A festa ja acabou :(';
     }
 }, 1000)
